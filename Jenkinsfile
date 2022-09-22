@@ -1,11 +1,7 @@
 pipeline {
     environment {
-    registry         = "registry.gitlab.com"   
     account          = "quickbooks2018"
-    repo             = "gitlab-integration-with-jenkins"
-    tag              = "latest"
-    api_token_name   = "jenkins"
-    gitlab_api_token = credentials('gitlab_api_token')
+    repo             = "jenkins-ansible-windows"
     
   }
     agent any
