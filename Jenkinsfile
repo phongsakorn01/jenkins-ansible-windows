@@ -21,7 +21,7 @@ pipeline {
         stage('Ansible Playbooks in Gitlab Repo') {
             steps {
              
-                ansiblePlaybook credentialsId: 'windows2019', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'windows-playbook.yaml'
+                ansiblePlaybook credentialsId: 'windows2019', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
                 
              }
                
