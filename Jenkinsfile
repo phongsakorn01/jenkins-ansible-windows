@@ -16,7 +16,7 @@ pipeline {
         stage('Ansible Playbooks ') {
             steps {
              
-                ansiblePlaybook credentialsId: 'windowserve', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
+                ansiblePlaybook credentialsId: 'windowserve',  installation: 'Ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
                 
              }
                
