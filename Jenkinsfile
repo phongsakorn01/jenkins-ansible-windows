@@ -1,9 +1,4 @@
 pipeline {
-    environment {
-    account          = "quickbooks2018"
-    repo             = "jenkins-ansible-windows"
-    
-  }
     agent any
    
     stages {
@@ -12,16 +7,16 @@ pipeline {
     stage('SCM Checkout') {
     steps {
 
-      git branch: 'main', url: 'https://github.com/quickbooks2018/jenkins-ansible-windows.git'
+      git branch: 'main', url: 'https://github.com/phongsakorn01/jenkins-ansible-windows.git'
         
         }
          }
 
 
-        stage('Ansible Playbooks in Gitlab Repo') {
+        stage('Ansible Playbooks ') {
             steps {
              
-                ansiblePlaybook credentialsId: 'windows2019', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
+                ansiblePlaybook credentialsId: 'windowserve', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
                 
              }
                
