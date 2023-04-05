@@ -1,5 +1,5 @@
 [winserv1]
-18.141.201.24
+18.136.209.107
 
 [winserv1:vars]
 ansible_user=Administrator
