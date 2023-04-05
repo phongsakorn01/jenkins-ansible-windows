@@ -19,7 +19,7 @@ pipeline {
         stage('Ansible Playbooks ') {
             steps {
              
-                ansiblePlaybook installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
+                ansiblePlaybook credentialsId: 'windowserve',installation: 'ansible', inventory: 'inventory', playbook: 'windowsplaybook.yaml'
                 
              }
                
